@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductCartView: View {
-    
+    @EnvironmentObject var cartVM: CartViewModel
     let product: Product
     
     var body: some View {
@@ -62,8 +62,10 @@ struct ProductCartView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ProductCartView(product: previewProduct)
+                .environmentObject(CartViewModel())
                 .previewLayout(.sizeThatFits)
             ProductCartView(product: previewProduct)
+                .environmentObject(CartViewModel())
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
         }

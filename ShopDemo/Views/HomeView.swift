@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     let columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    @EnvironmentObject var cartVM: CartViewModel
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns) {
-                ForEach(productList, id: \.id) { product in
-                    ProductCartView(product: product)
+        NavigationView {
+            ScrollView {
+                // MARK: - Product
+                LazyVGrid(columns: columns) {
+                    ForEach(productList, id: \.id) { product in
+                        ProductCartView(product: product)
+                    }
                 }
+                .padding()
             }
-            .padding()
+            // MARK: - toolbar
+            .toolbar {
+                NavigationLink {
+                    CartView()
+                } label: {
+                    CartButtonView(numberOfProducts: 1)
+                }
+
+            }
+            .navigationTitle("Shop")
         }
     }
 }
@@ -35,5 +48,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(CartViewModel())
     }
 }

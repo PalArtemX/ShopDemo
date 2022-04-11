@@ -14,6 +14,9 @@
 		F825080D280427EA00402E40 /* ProductCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825080C280427EA00402E40 /* ProductCartView.swift */; };
 		F825080F2804282200402E40 /* PreviewProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825080E2804282200402E40 /* PreviewProduct.swift */; };
 		F825081128042B1700402E40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825081028042B1700402E40 /* HomeView.swift */; };
+		F825081328042E3100402E40 /* CartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825081228042E3100402E40 /* CartButtonView.swift */; };
+		F82508152804377D00402E40 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82508142804377D00402E40 /* CartView.swift */; };
+		F8250818280438D500402E40 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8250817280438D500402E40 /* CartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		F825080C280427EA00402E40 /* ProductCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCartView.swift; sourceTree = "<group>"; };
 		F825080E2804282200402E40 /* PreviewProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProduct.swift; sourceTree = "<group>"; };
 		F825081028042B1700402E40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F825081228042E3100402E40 /* CartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
+		F82508142804377D00402E40 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F8250817280438D500402E40 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				F825081028042B1700402E40 /* HomeView.swift */,
+				F82508142804377D00402E40 /* CartView.swift */,
 				F825080B280427CA00402E40 /* Componets */,
 			);
 			path = Views;
@@ -88,6 +95,7 @@
 		F8250807280424AD00402E40 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F8250817280438D500402E40 /* CartViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F825080C280427EA00402E40 /* ProductCartView.swift */,
+				F825081228042E3100402E40 /* CartButtonView.swift */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -178,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F825081328042E3100402E40 /* CartButtonView.swift in Sources */,
+				F82508152804377D00402E40 /* CartView.swift in Sources */,
 				F825080F2804282200402E40 /* PreviewProduct.swift in Sources */,
 				F82507F92804247100402E40 /* ShopDemoApp.swift in Sources */,
+				F8250818280438D500402E40 /* CartViewModel.swift in Sources */,
 				F825081128042B1700402E40 /* HomeView.swift in Sources */,
 				F825080D280427EA00402E40 /* ProductCartView.swift in Sources */,
 				F825080A2804264A00402E40 /* Product.swift in Sources */,
