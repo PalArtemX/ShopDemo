@@ -19,6 +19,7 @@
 		F8250818280438D500402E40 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8250817280438D500402E40 /* CartViewModel.swift */; };
 		F825081A28043B8C00402E40 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825081928043B8C00402E40 /* ProductRowView.swift */; };
 		F825081C2804514500402E40 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825081B2804514500402E40 /* PaymentButtonView.swift */; };
+		F8923E83280470A100821262 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8923E82280470A100821262 /* PaymentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F825081928043B8C00402E40 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
 		F825081B2804514500402E40 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
 		F83D44C7280466C0009D2AB9 /* ShopDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShopDemo.entitlements; sourceTree = "<group>"; };
+		F8923E82280470A100821262 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 				F8250806280424A700402E40 /* Views */,
 				F8250807280424AD00402E40 /* ViewModels */,
 				F8250808280424BF00402E40 /* Models */,
-				F83D44C82804693A009D2AB9 /* Extensions */,
+				F8923E82280470A100821262 /* PaymentHandler.swift */,
 				F82507FC2804247100402E40 /* Assets.xcassets */,
 				F82507FE2804247100402E40 /* Preview Content */,
 			);
@@ -124,13 +126,6 @@
 				F825081B2804514500402E40 /* PaymentButtonView.swift */,
 			);
 			path = Componets;
-			sourceTree = "<group>";
-		};
-		F83D44C82804693A009D2AB9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +203,7 @@
 				F825080F2804282200402E40 /* PreviewProduct.swift in Sources */,
 				F82507F92804247100402E40 /* ShopDemoApp.swift in Sources */,
 				F825081C2804514500402E40 /* PaymentButtonView.swift in Sources */,
+				F8923E83280470A100821262 /* PaymentHandler.swift in Sources */,
 				F825081A28043B8C00402E40 /* ProductRowView.swift in Sources */,
 				F8250818280438D500402E40 /* CartViewModel.swift in Sources */,
 				F825081128042B1700402E40 /* HomeView.swift in Sources */,
