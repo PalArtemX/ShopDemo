@@ -37,7 +37,9 @@ struct ProductCartView: View {
             }
             
             Button {
-                //
+                withAnimation(.spring()) {
+                    cartVM.addToCart(product: product)
+                }
             } label: {
                 Image(systemName: "plus.circle")
                     .symbolRenderingMode(.hierarchical)

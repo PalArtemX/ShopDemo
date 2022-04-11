@@ -27,7 +27,7 @@ struct HomeView: View {
                 NavigationLink {
                     CartView()
                 } label: {
-                    CartButtonView(numberOfProducts: 1)
+                    CartButtonView(numberOfProducts: cartVM.products.count)
                 }
 
             }

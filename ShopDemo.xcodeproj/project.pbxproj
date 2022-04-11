@@ -17,6 +17,7 @@
 		F825081328042E3100402E40 /* CartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825081228042E3100402E40 /* CartButtonView.swift */; };
 		F82508152804377D00402E40 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82508142804377D00402E40 /* CartView.swift */; };
 		F8250818280438D500402E40 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8250817280438D500402E40 /* CartViewModel.swift */; };
+		F825081A28043B8C00402E40 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825081928043B8C00402E40 /* ProductRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F825081228042E3100402E40 /* CartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
 		F82508142804377D00402E40 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		F8250817280438D500402E40 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		F825081928043B8C00402E40 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				F825080C280427EA00402E40 /* ProductCartView.swift */,
 				F825081228042E3100402E40 /* CartButtonView.swift */,
+				F825081928043B8C00402E40 /* ProductRowView.swift */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				F82508152804377D00402E40 /* CartView.swift in Sources */,
 				F825080F2804282200402E40 /* PreviewProduct.swift in Sources */,
 				F82507F92804247100402E40 /* ShopDemoApp.swift in Sources */,
+				F825081A28043B8C00402E40 /* ProductRowView.swift in Sources */,
 				F8250818280438D500402E40 /* CartViewModel.swift in Sources */,
 				F825081128042B1700402E40 /* HomeView.swift in Sources */,
 				F825080D280427EA00402E40 /* ProductCartView.swift in Sources */,
