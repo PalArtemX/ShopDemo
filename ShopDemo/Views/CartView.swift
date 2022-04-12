@@ -12,29 +12,41 @@ struct CartView: View {
     
     var body: some View {
         ScrollView {
-            if cartVM.products.count > 0 {
-                ForEach(cartVM.products, id: \.id) { product in
-                    ProductRowView(product: product)
-                }
-                
-                HStack {
-                    Spacer()
-                    Image(systemName: "dollarsign.square")
-                        .symbolRenderingMode(.hierarchical)
-                    Text("\(cartVM.total)")
-                }
-                .font(.headline)
-                .padding()
-                
-                PaymentButtonView(action: {})
+            if cartVM.paymentSuccess {
+                Text("Thanks for your purchase!")
                     .padding()
             } else {
-                Text("Your cart is empty")
+                if cartVM.products.count > 0 {
+                    ForEach(cartVM.products, id: \.id) { product in
+                        ProductRowView(product: product)
+                    }
+                    
+                    HStack {
+                        Spacer()
+                        Image(systemName: "dollarsign.square")
+                            .symbolRenderingMode(.hierarchical)
+                        Text("\(cartVM.total)")
+                    }
+                    .font(.headline)
+                    .padding()
+                    
+                    PaymentButtonView(action: cartVM.pay)
+                        .padding()
+                } else {
+                    Text("Your cart is empty")
+                }
             }
+            
+            
                 
         }
         .navigationTitle("My Cart")
         .padding(.top)
+        .onDisappear {
+            if cartVM.paymentSuccess {
+                cartVM.paymentSuccess = false
+            }
+        }
     }
 }
 

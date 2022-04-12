@@ -12,7 +12,8 @@ class CartViewModel: ObservableObject {
     @Published var products: [Product] = []
     @Published var total = 0
     
-    
+    let paymentHandler = PaymentHandler()
+    @Published var paymentSuccess = false
     
     // MARK: - Functions
     
@@ -26,5 +27,14 @@ class CartViewModel: ObservableObject {
     func removeFromCart(product: Product) {
         products = products.filter { $0.id != product.id }
         total -= product.price
+    }
+    
+    // MARK: pay
+    func pay() {
+        paymentHandler.startPayment(products: products, total: total) { success in
+            self.paymentSuccess = success
+            self.products = []
+            self.total = 0
+        }
     }
 }
